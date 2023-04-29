@@ -7,15 +7,15 @@ from django.contrib.auth.forms import UserCreationForm
 from .models import Workout
 
 # A tuple of 2-tuples
-TYPE = (
-    ('C', 'Cardio'),
-    ('Y', 'Yoga'),
-    ('S', 'Strength')
-)
+# TYPE = (
+#     ('C', 'Cardio'),
+#     ('Y', 'Yoga'),
+#     ('S', 'Strength')
+# )
 
 # Add the Workout class & list and view function below the imports
-class Horse:  # Note that parens are optional if not inheriting from another class
-    def __init__(type, description):
+class Workout:  # Note that parens are optional if not inheriting from another class
+    def __init__(self, type, description):
         self.type = type
         self.description = description
     
